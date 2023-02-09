@@ -7,6 +7,9 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import Home from './components/Home';
 import { Videos } from './components/Videos';
+import { Upload } from './components/Upload';
+import {Login} from "./components/Login"
+import {SignUp} from "./components/SignUp"
 function App() {
   return (
     <BrowserRouter>
@@ -14,6 +17,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/videos" element={<Videos />}></Route>
+        <Route path="/upload" element={<Upload />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/signup" element={<SignUp />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
